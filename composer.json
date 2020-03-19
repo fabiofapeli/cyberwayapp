@@ -1,0 +1,32 @@
+{
+    "name": "fabiofapeli/cyberwayapp",
+    "description": "Package to add data from the user's device to the database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabio Pereira de Lima",
+            "email": "fabio.fapeli@gmail.com"
+        }
+    ],
+    "homepage": "https://www.cyberway.com.br",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FabioFapeli\\CyberwayApp\\Providers\\AppServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FabioFapeli\\CyberwayApp\\": ""
+        }
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "3.8",
+        "phpunit/phpunit": "^7.5"
+    }
+}

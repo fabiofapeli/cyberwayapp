@@ -1,0 +1,14 @@
+Language: php
+
+php:
+  -'5.6'
+  -'7.1'
+
+before_install:
+  -composer selfupdate
+
+install:
+  -composer install
+
+script:
+vendor\bin\phpunit ./tests
